@@ -1,0 +1,279 @@
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.chest {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.chest h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.chest p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.chest .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.chest .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.chest .container figure {
+  float: left;
+  width: 33.333333%;
+  padding: 0 15px;
+}
+
+.chest .container figure img {
+  width: 100%;
+  height:220px;
+}
+.chest .container figure p{
+  color: red;
+  margin-bottom: 20px;
+}
+.chest .container figure a{
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+
+.back {
+  padding: 100px 0;
+
+  text-align: center;
+}
+
+.back h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.back p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.back .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.back .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.back .container figure {
+  float: left;
+  width:25%;
+  padding: 0 15px;
+}
+
+.back .container figure img {
+  width: 100%;
+  height:220px;
+}
+.back .container figure p{
+  color: red;
+  margin-bottom: 20px;
+}
+.back .container figure a{
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+
+.leg {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.leg h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.leg p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.leg .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.leg .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.leg .container figure {
+  float: left;
+  width: 20%;
+  padding: 0 15px;
+}
+
+.leg .container figure img {
+  width: 100%;
+  height:220px;
+}
+.leg .container figure p{
+  color: red;
+  margin-bottom: 20px;
+}
+.leg .container figure a{
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+
+.shoulder {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.shoulder h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shoulder p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.shoulder .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.shoulder .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.shoulder .container figure {
+  float: left;
+  width: 16.666666%;
+  padding: 0 15px;
+}
+
+.shoulder .container figure img {
+  width: 100%;
+  height:220px;
+}
+.shoulder .container figure p{
+  color: red;
+  margin-bottom: 20px;
+}
+.shoulder .container figure a{
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+
+.arm {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.arm h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.arm p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.arm .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.arm .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.arm .container figure {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+
+.arm .container figure img {
+  width: 100%;
+  height:300px;
+}
+.arm .container figure p{
+  color: red;
+  margin-bottom: 20px;
+}
+.arm .container figure a{
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 10px;
+}
