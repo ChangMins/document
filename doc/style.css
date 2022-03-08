@@ -42,7 +42,7 @@ h1 {
 
 .chest .container figure img {
   width: 100%;
-  height:220px;
+  margin-bottom: 20px
 }
 .chest .container figure p{
   color: red;
@@ -97,7 +97,7 @@ h1 {
 
 .back .container figure img {
   width: 100%;
-  height:220px;
+  margin-bottom: 20px
 }
 .back .container figure p{
   color: red;
@@ -152,7 +152,7 @@ h1 {
 
 .leg .container figure img {
   width: 100%;
-  height:220px;
+  margin-bottom: 20px
 }
 .leg .container figure p{
   color: red;
@@ -206,7 +206,7 @@ h1 {
 
 .shoulder .container figure img {
   width: 100%;
-  height:220px;
+  margin-bottom: 20px
 }
 .shoulder .container figure p{
   color: red;
@@ -261,13 +261,13 @@ h1 {
 
 .arm .container figure img {
   width: 100%;
-  height:300px;
+  margin-bottom: 20px
 }
 .arm .container figure p{
   color: red;
   margin-bottom: 20px;
 }
-.arm .container figure a{
+. .container figure a{
   display: block;
   margin: 0 auto;
   width: 160px;
