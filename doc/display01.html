@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display 01</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    .none {
+      display: none;
+    }
+
+    @media (max-width: 1000px) {
+      .none {
+        display: block;
+      }
+      i {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        font-size: 30px;
+        padding: 10px;
+        background: #ddd;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: -350px;
+        background-color: #333;
+        padding: 100px 0 0 50px;
+        width: 350px;
+        height: 100vh;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      nav .active {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#!">menu1</a></li>
+      <li><a href="#!">menu2</a></li>
+      <li><a href="#!">menu3</a></li>
+      <li><a href="#!">menu4</a></li>
+    </ul>
+  </nav>
+  <div class="none">
+    <i class="xi-bars"></i>
+  </div>
+
+</body>
+</html>
