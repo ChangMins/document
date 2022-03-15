@@ -1,0 +1,144 @@
+.headerWrap {
+  padding: 30px 0;
+  background-color: #f1f1f1;
+}
+.headerWrap .search{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.headerWrap .search span{
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.5s;
+  background: #444;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.headerWrap .search:hover span{
+  width: 250px;
+}
+
+.headerWrap .search:hover i{
+  opacity: 0;
+}
+
+.content .container{
+  width: 1200px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.content .container figure{
+  width: 20%;
+  margin: 0 10px;
+  position: relative;
+}
+.content .container .slide1 a{
+  position: absolute;
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.content .container .slide1:hover a{
+  opacity: 1;
+}
+
+.content .container .slide2 {
+  overflow: hidden;
+}
+.content .container .slide2:hover a{
+  top: 0;
+}
+
+.content .container .slide2 a{
+  position: absolute;
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 220px;
+  transition: 0.5s;
+}
+.content .container .slide3 {
+  overflow: hidden;
+}
+.content .container .slide3:hover a{
+  left: 0;
+}
+.content .container .slide3 a{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+
+  left: -100%;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: 0.5s;
+}
+.content .container .slide4 {
+  overflow: hidden;
+}
+.content .container .slide4:hover a{
+  right: 0;
+}
+.content .container .slide4 a{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  top: 0;
+
+  transition: 0.5s;
+
+}
+.content .container .slide5 {
+  overflow: hidden;
+}
+
+.content .container .slide5:hover a {
+  top: 0;
+}
+.content .container .slide5 a{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+
+  width: 100%;
+  height: 100%;
+
+  top: -100%;
+
+  transition: 0.5s;
+}
