@@ -1,4 +1,4 @@
-/**/
+
 .headerWrap{
   background: #f00;  
   color: #fff;
@@ -9,12 +9,9 @@
   width: 1200px;
   margin: 0 auto;
 }
-.button {
+.xi-close{
   width: 1200px;
   margin: 0 auto;
-}
-
-.button i{
   color: red;
   display: flex;
   justify-content: end;
