@@ -1,0 +1,217 @@
+/**/
+.Wrap {}
+
+/* topBanner start */
+.topBanner {
+  background: #f3f3f3;
+  padding: 24px 0;
+}
+.topBanner .container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.topBanner .container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 0.040em;
+}
+.topBanner .container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+.topBanner .container a{
+  display: inline-block;
+  border: 1px solid #333;
+  height: 16px;
+  line-height: 14px;
+  padding: 0 20px;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.topBanner .container a:hover {
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+  background-color: #333;
+}
+.topBanner .container i {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+.topBanner .container i:hover {
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+  background-color: #333;
+}
+/* topBanner end */
+
+/* header start */
+.headerWrap {}
+
+.headerWrap .container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 100px;
+}
+.headerWrap .container>* {
+  padding: 0 15px;
+}
+.headerWrap .container .gnb {}
+
+.headerWrap .container .gnb>ul {
+  display: flex;
+}
+.headerWrap .container .gnb>ul>li {
+  padding: 0 20px;
+  position: relative;
+} 
+.headerWrap .container .gnb>ul>li>a:hover {
+  color: #fff;
+  background: #333;
+}
+.headerWrap .container .gnb>ul>li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 2px;
+  height: 13px;
+  background-color: #333;
+}
+.headerWrap .container .gnb>ul>li:first-child::after {
+  display: none;
+}
+.headerWrap .searchForm {
+  margin-left: auto;
+}
+.headerWrap .searchForm input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+.headerWrap .searchForm button {
+  outline: none;
+  border: none;
+  background: transparent;
+
+}
+.headerWrap .searchForm button i {  
+  font-size: 15px;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.headerWrap .searchForm button i:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333
+}
+/* header end */
+
+/* mainVisual start */
+.mainVisual .visualSlide {
+  border-top: 1px solid #ddd;
+}
+
+.mainVisual .visualSlide figure{
+  height: 600px;
+}
+.mainVisual .visualSlide figure.slick-active{
+
+}
+
+.mainVisual .visualSlide figure .inner {
+  width: 1200px;
+  margin: 300px auto 0 auto;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.mainVisual .visualSlide figure .inner h3 {
+  opacity: 0;
+  transform: translateY(100px);
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-shadow: 0 0 2px #333;
+  transition: 1s 0.5s;
+}
+.mainVisual .visualSlide figure .inner p {
+  font-size: 15px;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s 1s;
+}
+
+.mainVisual .visualSlide figure.slick-active .inner h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mainVisual .visualSlide figure.slick-active .inner p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mainVisual .visualSlide .item01 {
+  background: url(../doc/images/mainvisual01.jpg) no-repeat center center/cover;
+}
+.mainVisual .visualSlide .item02 {
+  background: url(../doc/images/mainvisual02.jpg) no-repeat center center/cover;
+}
+.mainVisual .visualSlide .item03 {
+  background: url(../doc/images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visualSlide .slick-dots {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+  gap: 10px;
+}
+
+.mainVisual .visualSlide .slick-dots li {
+  width: 100px;
+  height: 5px;
+  background: #333;
+  transition: 1s;
+}
+.mainVisual .visualSlide .slick-dots li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #f00;
+  transition: 1s;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active {
+  background: #fff;
+}
+
+.mainVisual .visualSlide .slick-dots li.slick-active::after {
+  width: 100%;
+
+}
+
+.mainVisual .visualSlide .slick-dots button {
+  display: none;
+}
+
+
