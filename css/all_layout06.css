@@ -425,9 +425,7 @@
   margin: 0 auto;
 }
 .allProduct .allProductSlide figure{
-  padding: 0 15px;
-  transition: 0.5s;
-  overflow: hidden;
+  padding: 15px 15px;
 }
 
 .allProduct h2 {
@@ -444,11 +442,9 @@
 }
 .allProduct .inner {
   margin-bottom: 20px ;
+  transition: 0.5s;
 }
-.allProduct .inner {
-  margin-bottom: 30px ;
-}
-.allProduct .slick-center{
+.allProduct .slick-center .inner{
   transform: scale(1.2);
 }
 .allProduct .inner + strong {
