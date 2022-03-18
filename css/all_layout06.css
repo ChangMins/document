@@ -25,11 +25,9 @@
   letter-spacing: -0.025em;
 }
 .topBanner .container a{
-  display: inline-block;
   border: 1px solid #333;
   height: 16px;
-  line-height: 14px;
-  padding: 0 20px;
+  padding: 5px 20px;
   margin-left: 20px;
   font-size: 13px;
   font-weight: 300;
@@ -126,21 +124,74 @@
 .mainVisual .visualSlide {
   border-top: 1px solid #ddd;
 }
+.mainVisual .visualSlide .msLeft{
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  z-index: 999;
 
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+
+  transform: translateY(-50%) rotate(-45deg);
+}
+.mainVisual .visualSlide .msLeft.oo {
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.mainVisual .visualSlide .msRight{
+  position: absolute;
+  top: 50%;
+  right: 200px;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+
+  transform: translateY(-50%) rotate(135deg);
+}
 .mainVisual .visualSlide figure{
   height: 600px;
+  position: relative;
+}
+.mainVisual .visualSlide figure i {
+  position: absolute;
+  top: 100px;
+  right: 200px;
+
+  font-size: 100px;
+  color: #f00;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+.mainVisual .visualSlide figure.oo i {
+  opacity: 1;
+}
+.mainVisual .visualSlide figure.item02 .inner {
+  color: #333;
 }
 .mainVisual .visualSlide figure.slick-active{
 
 }
-
 .mainVisual .visualSlide figure .inner {
   width: 1200px;
   margin: 300px auto 0 auto;
   padding: 0 15px;
   color: #fff;
 }
-
 .mainVisual .visualSlide figure .inner h3 {
   opacity: 0;
   transform: translateY(100px);
@@ -157,16 +208,14 @@
   transform: translateY(100px);
   transition: 1s 1s;
 }
-
-.mainVisual .visualSlide figure.slick-active .inner h3 {
+.mainVisual .visualSlide figure.oo .inner h3 {
   opacity: 1;
   transform: translateY(0);
 }
-.mainVisual .visualSlide figure.slick-active .inner p {
+.mainVisual .visualSlide figure.oo .inner p {
   opacity: 1;
   transform: translateY(0);
 }
-
 .mainVisual .visualSlide .item01 {
   background: url(../doc/images/mainvisual01.jpg) no-repeat center center/cover;
 }
@@ -176,7 +225,6 @@
 .mainVisual .visualSlide .item03 {
   background: url(../doc/images/mainvisual03.jpg) no-repeat center center/cover;
 }
-
 .mainVisual .visualSlide .slick-dots {
   position: absolute;
   display: flex;
@@ -185,7 +233,6 @@
   transform: translateX(-50%);
   gap: 10px;
 }
-
 .mainVisual .visualSlide .slick-dots li {
   width: 100px;
   height: 5px;
@@ -200,18 +247,257 @@
   background: #f00;
   transition: 1s;
 }
-
 .mainVisual .visualSlide .slick-dots li.slick-active {
   background: #fff;
 }
-
 .mainVisual .visualSlide .slick-dots li.slick-active::after {
   width: 100%;
 
 }
-
 .mainVisual .visualSlide .slick-dots button {
   display: none;
 }
+/* mainVisual end */
+
+/* mainProduct start */
+.mainProduct {
+  padding: 100px 0;
+  text-align: center;
+}
+.mainProduct h2 {
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  margin-bottom: 10px;
+}
+.mainProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.mainProduct .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.mainProduct .container figure {
+  flex: 1;
+  padding: 0 15px;
+  position: relative;
+}
+.mainProduct .container figure .inner {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.mainProduct .container figure .inner img {
+  transition: 1s;
+  
+}
+.mainProduct .container figure .inner:hover img {
+  transform: scale(1.5);
+}
+.mainProduct .container figure strong {
+  display: block;
+  margin-bottom: 10px;
+}
+.mainProduct .container figure a {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #333;
+  color: #fff;
+}
+.mainProduct .container figure a:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+.mainProduct .container figure .label {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-left: 50px solid #f00;
+  border-top: 10px solid #f00;
+  border-bottom: 10px solid #f00;
+  border-right: 10px solid transparent;
+}
+.mainProduct .container figure .label span {
+  position: absolute;
+  top: -6px;
+  left: -35px;
+  color: #fff;
+  font-size: 14px;
+}
+/* mainProduct end */
+
+/* eventBanner start */
+.eventBanner {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background: url(../doc/images/mainvisual03.jpg) no-repeat fixed center center/cover;
+  filter: grayscale(1);
+}
+.eventBanner h2 {
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  margin-bottom: 10px;
+}
+.eventBanner p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.eventBanner i {
+  padding: 7px;
+  background: #333;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.eventBanner i:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* eventBanner end */
+
+/* eventProduct start */
+.eventProduct {
+  padding: 100px 0;
+}
+.eventProduct .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.eventProduct .container>div {
+  padding: 0 15px;
+}
+.eventProduct .container .right {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.eventProduct .container .left {
+  width: 40%;
+}
+.eventProduct .container .left .ProductSlide {
+  border: 5px solid #ddd;
+}
+.eventProduct h3 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  margin-bottom: 10px;
+}
+.eventProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.eventProduct i {
+  padding: 7px;
+  background: #333;
+  border-radius: 50%;
+  margin-left: 15px;
+  color: #fff;
+}
+.eventProduct i:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+/* eventProduct end */
+
+/* allProduct start */
+
+.allProduct {
+  padding: 100px 0;
+  text-align: center;
+  background: #f2f2f2;
+  position: relative;
+}
+.allProduct .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.allProduct .allProductSlide figure{
+  padding: 0 15px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.allProduct h2 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  margin-bottom: 10px;
+}
+.allProduct p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.allProduct .inner {
+  margin-bottom: 20px ;
+}
+.allProduct .inner {
+  margin-bottom: 30px ;
+}
+.allProduct .slick-center{
+  transform: scale(1.2);
+}
+.allProduct .inner + strong {
+  font-size: 13px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 20px;
+}
+.allProduct .slick-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.allProduct .slick-dots li{
+  width: 13px;
+  height: 13px;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.allProduct .slick-dots li.slick-active {
+  background: #f00;
+}
+.allProduct .slick-dots li button{
+  display: none;
+}
+
+.allProduct i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 30px;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+}
+
+.allProduct i:first-child {
+  margin-left: -700px;
+  cursor: pointer;
+}
 
 
+.allProduct i:last-child {
+  margin-left: 700px;
+  cursor: pointer;
+}
+
+.allProduct
