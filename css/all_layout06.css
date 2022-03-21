@@ -179,7 +179,17 @@
 }
 .mainVisual .visualSlide figure.oo i {
   opacity: 1;
+  animation: heart 1s infinite;
 }
+
+@keyframes heart {
+  0% {transform: scale(1);}
+  20% {transform: scale(0.5);}
+  50% {transform: scale(1);}
+  70% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
 .mainVisual .visualSlide figure.item02 .inner {
   color: #333;
 }
@@ -496,4 +506,124 @@
   cursor: pointer;
 }
 
-.allProduct
+.movieBg {
+  padding: 200px 0;
+  background: #000;
+  filter: grayscale(1);
+  color: #fff;
+  text-align: center;
+}
+
+.movieBg h3 {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  margin-bottom: 10px;
+}
+.movieBg p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: 30px;
+}
+.movieBg i {
+  font-size: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.movieBg i:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.customerArea {
+  padding: 100px 0;
+  background: #f2f2f2;
+}
+.customerArea .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.customerArea .container>div {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.customerArea .container .tabMenu {
+  display: flex;
+  text-align: center;
+}
+
+.customerArea .container .tabMenu>li {
+  flex: 1;
+  background: #333;
+  color: #fff;
+  padding: 20px 10px;
+}
+.customerArea .container .tabMenu>li~li {
+  border-left: 1px solid #fff;
+}
+.customerArea .container .tabMenu>li.active {
+  background: #369;
+}
+
+.customerArea .container .tabContent>div {
+  display: none;
+}
+.customerArea .container .tabContent>div.active {
+  display: block;
+}
+
+.customerArea .container .tabContent a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dotted #333;
+}
+
+.customerArea .container .tabContent strong {
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.customerArea .container .contentImgBox {
+  position: relative;
+}
+.customerArea .container .contentImgBox button{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #9ACD32;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.customerArea .container .contentImgBox button:hover{
+  background-color: #fff;
+  color: #9ACD32;
+  border: 3px solid #9ACD32;
+  border-radius: 30px;
+}
+
+.customerArea .container .contentImgBox i {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 50px;
+  color: #f00;
+  opacity: 0;
+  transition: 0.5s;
+}
+.customerArea .container .contentImgBox:hover i{
+  opacity: 1;
+    animation: heart 1s infinite;
+}

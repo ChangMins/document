@@ -47,7 +47,7 @@ $('.eventProduct i:nth-of-type(2)').on('click',function(){
 });
 // eventSlide end //
 
-// all product slide //
+// all product slide start//
 $('.allProductSlide').slick({
   arrows: false,
   dots: true,
@@ -62,5 +62,36 @@ $('.allProduct i:first-child').on('click', function(){
 $('.allProduct i:last-child').on('click', function(){
   $('.allProductSlide').slick('slickNext')
 });
+// all product slide end//
+
+/////////////youtube player start//////////////////
+$(function(){
+  jQuery("#bgndVideo").YTPlayer({
+    videoURL:'BsekcY04xvQ',
+    containment:'.movieBg',
+    autoPlay:true, 
+    mute:true,
+    startAt:0, 
+    opacity:0.2,
+    showControls: false,
+    playOnlyIfVisible: true,
+  });
+});
+
+$('.movieBg i:first-child').on('click',function(){
+  $('#bgndVideo').YTPPause();
+});
+$('.movieBg i:last-child').on('click',function(){
+  $('#bgndVideo').YTPPlay();
+});
+/////////////youtube player end//////////////////
+
+/////////////tab menu start///////////////////////
+$('.tabMenu li').on('click', function(){
+  var idx = $(this).index();
+  $(this).addClass('active').siblings().removeClass('active');
+  $('.tabContent>div').eq(idx).addClass('active').siblings().removeClass('active');
+});
+/////////////tab menu end///////////////////////
 ///////////////////////////////////
 });
