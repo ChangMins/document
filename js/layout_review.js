@@ -13,7 +13,7 @@ $(function(){
   $('.visualSlide').slick({
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     dots: true,
     prevArrow: '<div class="msLeft"></div>',
     nextArrow: '<div class="msRight"></div>'
