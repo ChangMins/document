@@ -93,5 +93,15 @@ $('.tabMenu li').on('click', function(){
   $('.tabContent>div').eq(idx).addClass('active').siblings().removeClass('active');
 });
 /////////////tab menu end///////////////////////
+
+$('#link').on('change', function () {
+  let linkSite = $(this).val();
+  if (!linkSite) return;
+  window.open(linkSite)
+});
+
+$('.popUp01 button').on('click', function () {
+  $(this).parent().hide()
+});
 ///////////////////////////////////
 });
