@@ -111,6 +111,7 @@
   font-size: 15px;
   color: #fff;
   background: #333;
+  border: 1px solid #fff;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -124,7 +125,7 @@
 
 /* mainVisual start */
 .mainVisual .visualSlide {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #fff;
 }
 .mainVisual .visualSlide .msLeft{
   position: absolute;
@@ -166,18 +167,6 @@
 
   opacity: 0;
   transition: 0.5s;
-}
-.mainVisual .visualSlide figure.oo i {
-  opacity: 1;
-  animation: heart 1s infinite;
-}
-
-@keyframes heart {
-  0% {transform: scale(1);}
-  20% {transform: scale(0.5);}
-  50% {transform: scale(1);}
-  70% {transform: scale(0.5);}
-  100% {transform: scale(1);}
 }
 
 .mainVisual .visualSlide figure.slick-active{
@@ -233,7 +222,7 @@
 .mainVisual .visualSlide .slick-dots li {
   width: 100px;
   height: 5px;
-  background: #333;
+  background: #fff;
   transition: 1s;
 }
 .mainVisual .visualSlide .slick-dots li::after {
@@ -241,7 +230,7 @@
   display: block;
   width: 0;
   height: 100%;
-  background: #f00;
+  background: #05141f;
   transition: 1s;
 }
 .mainVisual .visualSlide .slick-dots li.slick-active {
@@ -404,12 +393,13 @@
   border-radius: 50%;
   margin-left: 15px;
   color: #fff;
+  border: 1px solid #fff;
 }
 .eventProduct i:hover {
   background: #fff;
   color: #333;
   border: 1px solid #333;
-  padding: 5px;
+  padding: 7px;
 }
 /* eventProduct end */
 
@@ -484,8 +474,13 @@
   color: #fff;
   background: #333;
   padding: 10px;
+  border: 1px solid #fff;
 }
-
+.allProduct i:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
 .allProduct i:first-child {
   margin-left: -700px;
   cursor: pointer;
@@ -667,28 +662,54 @@
 }
 
 .popUp01 {
-  position: absolute;
+  position: fixed;
   inset: 40% auto auto 30%;
   transform: translate(-50%, -50%);
   border: 3px solid #333;
   background: rgba(0,0,0,0.5);
-  border-radius: 30px 0 30px 0px;
+  border-radius: 10px;
 }
 .popUp01 img {
   width: 400px;
-  border-radius: 30px 0 30px 0px;
+  border-radius: 10px;
 }
 
-.popUp01 button {
-  width: 100px;
+.popUp01 .close {
+  width: 30px;
   height: 30px;
   outline: none;
-  border: 1px solid #fff;
-  border-radius: 30px 0 30px 0px;
+  border: 1px solid #333;
+  border-radius: 10%;
   background: #fff;
   color: #05141f;
   text-transform: uppercase;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.popUp01 .close:hover {
+  border: 1px solid #fff;
+  background: #05141f;
+  color: #fff;
+}
+
+.popUp01 .apply {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 10%;
+  background: #fff;
+  color: #05141f;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.popUp01 .apply:hover {
+  border: 1px solid #fff;
+  background: #05141f;
+  color: #fff;
 }
