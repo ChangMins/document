@@ -3,7 +3,7 @@
 
 /* topBanner start */
 .topBanner {
-  background: #f3f3f3;
+  background: #05141f;
   padding: 24px 0;
 }
 .topBanner .container {
@@ -17,15 +17,17 @@
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.040em;
+  color: #fff
 }
 .topBanner .container p {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.025em;
-}
+  color: #fff
+} 
 .topBanner .container a{
-  border: 1px solid #333;
+  border: 1px solid #fff;
   height: 16px;
   padding: 5px 20px;
   margin-left: 20px;
@@ -34,8 +36,8 @@
 }
 .topBanner .container a:hover {
   border: 1px solid #f3f3f3;
-  color: #f3f3f3;
-  background-color: #333;
+  color: #05141f;
+  background-color: #fff;
 }
 .topBanner .container i {
   position: absolute;
@@ -43,11 +45,11 @@
   top: 0;
   font-size: 24px;
   cursor: pointer;
+  color: #fff;
 }
 .topBanner .container i:hover {
-  border: 1px solid #f3f3f3;
-  color: #f3f3f3;
-  background-color: #333;
+  color: #05141f;
+  background-color: #fff;
 }
 /* topBanner end */
 
