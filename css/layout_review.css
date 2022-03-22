@@ -364,39 +364,39 @@
 /* eventProduct start */
 .eventProduct {
   padding: 100px 0;
+  background: url(../doc/images/bg.webp);
+  text-align: center;
 }
 .eventProduct .container {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
 }
 .eventProduct .container>div {
   padding: 0 15px;
 }
-.eventProduct .container .right {
-  display: flex;
-  align-items: center;
-  width: 60%;
-}
+
 .eventProduct .container .left {
-  width: 40%;
+
 }
 .eventProduct .container .left .ProductSlide {
-}
+  padding-left: 35%;
+} 
 .eventProduct .container .left .ProductSlide img {
-  padding-left: 40px;
+  
 }
 .eventProduct h3 {
   font-size: 19px;
   font-weight: 400;
   letter-spacing: 0.20em;
-  margin-bottom: 10px;
+  margin: 20px 0px;
+  text-align: center;
 }
 .eventProduct p {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: -0.025em;
   margin-bottom: 30px;
+  text-align: center;
 }
 .eventProduct i {
   padding: 7px;
