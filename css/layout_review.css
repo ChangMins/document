@@ -15,7 +15,7 @@
 .topBanner .container h2 {
   margin-bottom: 10px;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.040em;
 }
 .topBanner .container p {
@@ -137,19 +137,7 @@
 
   transform: translateY(-50%) rotate(-45deg);
 }
-.mainVisual .visualSlide .msLeft.oo {
-  position: absolute;
-  top: 50%;
-  left: 200px;
-  width: 100px;
-  height: 100px;
-  z-index: 999;
 
-  border-top: 1px solid #333;
-  border-left: 1px solid #333;
-
-  transform: translateY(-50%) rotate(-45deg);
-}
 
 .mainVisual .visualSlide .msRight{
   position: absolute;
@@ -190,9 +178,6 @@
   100% {transform: scale(1);}
 }
 
-.mainVisual .visualSlide figure.item02 .inner {
-  color: #333;
-}
 .mainVisual .visualSlide figure.slick-active{
 
 }
@@ -227,13 +212,13 @@
   transform: translateY(0);
 }
 .mainVisual .visualSlide .item01 {
-  background: url(../doc/images/mainvisual01.jpg) no-repeat center center/cover;
+  background: url(../doc/images/benzmainslide01.webp) no-repeat center center/cover;
 }
 .mainVisual .visualSlide .item02 {
-  background: url(../doc/images/mainvisual02.jpg) no-repeat center center/cover;
+  background: url(../doc/images/benzmainslide02.jpeg) no-repeat center center/cover;
 }
 .mainVisual .visualSlide .item03 {
-  background: url(../doc/images/mainvisual03.jpg) no-repeat center center/cover;
+  background: url(../doc/images/benzmainslide03.webp) no-repeat center center/cover;
 }
 .mainVisual .visualSlide .slick-dots {
   position: absolute;
@@ -276,7 +261,7 @@
 }
 .mainProduct h2 {
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.20em;
   margin-bottom: 10px;
 }
@@ -302,10 +287,11 @@
 }
 .mainProduct .container figure .inner img {
   transition: 1s;
-  
+  filter: grayscale(1);
 }
 .mainProduct .container figure .inner:hover img {
   transform: scale(1.5);
+  filter: grayscale(0);
 }
 .mainProduct .container figure strong {
   display: block;
@@ -320,6 +306,7 @@
 .mainProduct .container figure a:hover {
   background: #fff;
   color: #333;
+  padding: 9px 30px;
   border: 1px solid #333;
 }
 .mainProduct .container figure .label {
@@ -345,12 +332,11 @@
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(../doc/images/mainvisual03.jpg) no-repeat fixed center center/cover;
-  filter: grayscale(1);
+  background: url(../doc/images/benzbg.webp) no-repeat fixed center center/cover;
 }
 .eventBanner h2 {
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.20em;
   margin-bottom: 10px;
 }
@@ -394,11 +380,13 @@
   width: 40%;
 }
 .eventProduct .container .left .ProductSlide {
-  border: 5px solid #ddd;
+}
+.eventProduct .container .left .ProductSlide img {
+  padding-left: 40px;
 }
 .eventProduct h3 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.20em;
   margin-bottom: 10px;
 }
@@ -441,7 +429,7 @@
 
 .allProduct h2 {
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 0.20em;
   margin-bottom: 10px;
 }
@@ -509,8 +497,6 @@
 
 .movieBg {
   padding: 200px 0;
-  background: #000;
-  filter: grayscale(1);
   color: #fff;
   text-align: center;
 }
