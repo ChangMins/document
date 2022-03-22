@@ -74,10 +74,6 @@
   padding: 0 20px;
   position: relative;
 } 
-.headerWrap .container .gnb>ul>li>a:hover {
-  color: #fff;
-  background: #333;
-}
 .headerWrap .container .gnb>ul>li::after {
   content: "";
   position: absolute;
@@ -580,7 +576,7 @@
 .customerArea .container .contentImgBox {
   position: relative;
 }
-.customerArea .container .contentImgBox button{
+.customerArea .container .contentImgBox a{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -591,7 +587,7 @@
   border-radius: 10px;
   transition: 0.5s;
 }
-.customerArea .container .contentImgBox button:hover{
+.customerArea .container .contentImgBox a:hover{
   background-color: #fff;
   color: #9ACD32;
   border: 3px solid #9ACD32;
@@ -625,6 +621,7 @@
 }
 .footerWrap .container>* {
   padding: 0 15px;
+  line-height: inherit;
 }
 .footerWrap .container dl{
   display: flex;
@@ -668,10 +665,10 @@
   border: 3px solid #333;
   background: rgba(0,0,0,0.5);
   border-radius: 10px;
+  overflow: hidden;
 }
 .popUp01 img {
   width: 400px;
-  border-radius: 10px;
 }
 
 .popUp01 .close {
@@ -684,8 +681,8 @@
   color: #05141f;
   text-transform: uppercase;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
 }
 .popUp01 .close:hover {
@@ -695,17 +692,17 @@
 }
 
 .popUp01 .apply {
-  width: 100px;
+  width: 130px;
   height: 30px;
   outline: none;
   border: 1px solid #333;
-  border-radius: 10%;
+  border-radius: 10px;
   background: #fff;
   color: #05141f;
   text-transform: uppercase;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
   cursor: pointer;
 }
 .popUp01 .apply:hover {
