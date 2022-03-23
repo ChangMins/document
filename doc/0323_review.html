@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>22-03-23(Wed) review</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/0323_review.css">
+</head>
+<body>
+  <div class="Wrap">
+    <header>header</header>
+    <main>
+      <article>
+        <section class="greeting">
+          <h2><span>Mercedes-Benz</span> Greeting</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          
+          <div class="container">
+            <div class="left">
+              <h3>
+                Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.<br>
+                Laboriosam,</span> soluta natus. Nulla aperiam dolorum fugit!<br><br>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Laboriosam nisi labore error sequi,<br>
+                recusandae ullam molestiae eius minima et dolore impedit inventore beatae harum illo facilis debitis iste.<br>
+                Amet sit in officia necessitatibus pariatur, error possimus laborum nihil ut fugit, asperiores non dignissimos<br><br>
+                Est consequatur soluta eius dolores in ullam voluptatem<strong> facere mollitia possimus.</strong><br>
+              </p>
+            </div>
+            <div class="right">
+              <figure>
+                <img src="./images/class03.jpg" alt="">
+              </figure>
+            </div> 
+          </div>
+
+        </section>
+        <hr>
+        <section class="centerImg">
+          <h2><span>Mercedes-Benz</span> Greeting</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur</p>
+          <div class="container">
+            <figure>
+              <img src="./images/benzmainslide02.jpeg" alt="">
+            </figure>
+            <div class="content">
+              <div class="left">
+                <strong>
+                Lorem, ipsum dolor<br>
+                sit amet consectetur adipisicing elit.
+                </strong>
+              </div>
+              <div class="right">
+                <strong>ipsum dolor sit amet, consectetur adipisicing elit.</strong><br>
+                A sint tenetur quia. Accusantium quidem voluptates sapiente!<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Molestias, soluta quas! Sequi perferendis,<br><br>
+                repudiandae laboriosam placeat sed in ut tempore qui officia<br>
+                quibusdam soluta deleniti corrupti laborum natus temporibus iure.<br><br>
+                <strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="Map">
+          <h2>전시장 선택</h2>
+          <div class="container">
+            <figure>
+              <!-- * 카카오맵 - 지도퍼가기 -->
+              <!-- 1. 지도 노드 -->
+              <div id="daumRoughmapContainer1648017111791" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+              <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+              -->
+              <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+              <!-- 3. 실행 스크립트 -->
+              <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                  "timestamp" : "1648017111791",
+                  "key" : "29k4y",
+                  "mapWidth" : "640",
+                  "mapHeight" : "360"
+                }).render();
+              </script>
+            </figure>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>

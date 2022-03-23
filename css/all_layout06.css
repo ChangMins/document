@@ -701,3 +701,24 @@
   bottom: 0;
   right: 0;
 }
+
+.toTop {
+  position: fixed;
+  inset: auto 50px 100px auto;
+  background: transparent;
+  border: none;
+}
+
+.toTop:hover i {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  
+}
+
+.toTop i {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  font-size: 20px;
+}
