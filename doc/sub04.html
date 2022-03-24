@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sub page 04</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <style>
+    header, footer {
+      height: 100px;
+      background: #555;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+    }
+    .subPage {
+      padding: 100px 0;
+      letter-spacing: -0.025em;
+    }
+    .subPage .hospitalContent h2{
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+    .subPage .hospitalContent h2::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #0d6efd;
+      transform: translate(-10px, -15px);
+    }
+    .subPage .hospitalContent h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #0d6efd;
+      margin: 15px auto;
+    }
+    .subPage .hospitalContent>p {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+    .subPage .hospitalContent .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .subPage .hospitalContent .container .top {
+      width: 100%;
+      display: flex;
+      margin: 0 0 50px 0;
+    }
+    .subPage .hospitalContent .container .top figure {
+      flex: 1;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+    .subPage .hospitalContent .container .top figure .inner {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 30px 20px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      transition: 0.5s;
+      border-right:  1px solid rgba(255, 255, 255, 0.5);
+    }
+    .subPage .hospitalContent .container .top figure.on .inner {
+      left: 0;
+    }
+    .subPage .hospitalContent .container .top figure.on .inner a {
+      right: 0;
+      border-left:  1px solid rgba(255, 255, 255, 0.5);
+      border-bottom:  1px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+    .subPage .hospitalContent .container .top figure .inner h3 {
+      font-size: 20px;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 0 0 20px 0;
+      margin: 0 0 30px 0;
+    }
+    .subPage .hospitalContent .container .top figure .inner p {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+    .subPage .hospitalContent .container .top figure .inner a {
+      position: absolute;
+      width: 120px;
+      height: 30px;
+      line-height: 28px;
+      border-right:  1px solid rgba(255, 255, 255, 0.5);
+      border-top:  1px solid rgba(255, 255, 255, 0.5);
+      border-bottom:  1px solid rgba(255, 255, 255, 0.5);
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      top: 0;
+      right:-120px;
+      transition: 0.5s;
+    }
+    .subPage .hospitalContent .container .top figure>a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: inline-block;
+      padding: 10px;
+      background: #0d6efd;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      text-align: center;
+      color: #fff;
+    }
+
+  
+    .subPage .hospitalContent .container .top figure:nth-child(1) {
+      background: url(./images/class01.jpg) no-repeat center center/cover;
+    }
+    .subPage .hospitalContent .container .top figure:nth-child(2) {
+      background: url(./images/class02.jpg) no-repeat center center/cover;
+    }
+    .subPage .hospitalContent .container .top figure:nth-child(3) {
+      background: url(./images/class03.jpg) no-repeat center center/cover;
+    }
+    .subPage .hospitalContent .container .top figure:nth-child(4) {
+      background: url(./images/benzslide.jpg) no-repeat center center/cover;
+    }
+    .subPage .hospitalContent .container .left {
+      width: 50%;
+      padding: 0 0 0 30px;
+      position: relative;
+    }
+    .subPage .hospitalContent .container .left::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      display: block;
+      width: 5px;
+      height: 55px;
+      background: #333;
+    }
+    .subPage .hospitalContent .container .left h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+    }
+    .subPage .hospitalContent .container .left p {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    .subPage .hospitalContent .container .right {
+      width: 50%;
+    }
+    .subPage .hospitalContent .container .right ul{
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    .dotList {
+      line-height: 1.6;
+    }
+    .dotList>li {
+      border-bottom: 1px solid #ddd;
+    }
+    .dotList>li::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #0d6efd;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="Wrap">
+    <header>header</header>
+
+    <article class="subPage">
+      <section class="hospitalContent">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, autem.</p>
+        <div class="container">
+          <div class="top">
+            <figure>
+              <div class="inner">
+                <h3>
+                  Lorem, ipsum.
+                </h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur<br>
+                  adipisicing elit. Debitis, esse!
+                </p>
+                <a href="#!">A_Class</a>
+              </div>
+              <a href="#!">more</a>
+            </figure>
+            <figure>
+              <div class="inner">
+                <h3>
+                  Lorem, ipsum.
+                </h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur<br>
+                  adipisicing elit. Debitis, esse!
+                </p>
+                <a href="#!">C_Class</a>
+              </div>
+              <a href="#!">more</a>
+            </figure>
+            <figure>
+              <div class="inner">
+                <h3>
+                  Lorem, ipsum.
+                </h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur<br>
+                  adipisicing elit. Debitis, esse!
+                </p>
+                <a href="#!">C_Class</a>
+              </div>
+              <a href="#!">more</a>
+            </figure>
+            <figure>
+              <div class="inner">
+                <h3>
+                  Lorem, ipsum.
+                </h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur<br>
+                  adipisicing elit. Debitis, esse!
+                </p>
+                <a href="#!">S_Class</a>
+              </div>
+              <a href="#!">more</a>
+            </figure>
+          </div>
+          <div class="left">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur.
+            </p>
+          </div>
+          <ul class="right dotList">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </div>
+
+      </section>
+    </article>
+
+    <footer>footer</footer>
+  </div>
+</body>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script>
+$(function () {
+
+  $('.top figure>a').on('click', function () {
+    $(this).parent().toggleClass('on')
+  });
+
+});
+</script>
+</html>
